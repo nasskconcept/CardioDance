@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Équipe | CardioDance Association</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo de l'association CardioDance">
+      </a>
+  
+      <!-- Icône burger -->
+      <div class="burger" id="burger">&#9776;</div>
+  
+      <!-- Menu -->
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="horaire.html">Horaires</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main class="equipe">
+    <h1>Notre Équipe</h1>
+    <div class="grille-equipe">
+
+      <!-- Extrait 1 membre -->
+      <div class="membre" onclick="ouvrirModal(0)">
+        <img src="profZumba.jpg" alt="Léa Fernandez" />
+        <h3>Léa Fernandez</h3>
+        <p>Professeure de Zumba</p>
+      </div>
+
+      <!-- Répéter pour les 8 autres membres -->
+      <div class="membre" onclick="ouvrirModal(1)">
+        <img src="profStrongNation.jpg" alt="Malik Diao" />
+        <h3>Malik Diao</h3>
+        <p>Professeur de Strong Nation</p>
+      </div>
+
+      <div class="membre" onclick="ouvrirModal(2)">
+        <img src="profHiphop.jpg" alt="Chloé Morel" />
+        <h3>Chloé Morel</h3>
+        <p>Professeure Hip-Hop</p>
+      </div>
+
+      <div class="membre" onclick="ouvrirModal(3)">
+        <img src="profStraching.jpg" alt="Nadia Krief" />
+        <h3>Nadia Krief</h3>
+        <p>Stretching & Mobilité</p>
+      </div>
+
+      <div class="membre" onclick="ouvrirModal(4)">
+        <img src="profDanseurLibre.jpg" alt="Jules Navarro" />
+        <h3>Jules Navarro</h3>
+        <p>Danse Libre</p>
+      </div>
+
+      <div class="membre" onclick="ouvrirModal(5)">
+        <img src="secretaire.jpg" alt="Emma Roche" />
+        <h3>Emma Roche</h3>
+        <p>Secrétaire / RH</p>
+      </div>
+
+      <div class="membre" onclick="ouvrirModal(6)">
+        <img src="director.jpg" alt="Yann Blanchard" />
+        <h3>Yann Blanchard</h3>
+        <p>Direction Générale</p>
+      </div>
+
+      <div class="membre" onclick="ouvrirModal(7)">
+        <img src="directrice.jpg" alt="Isabelle Soum" />
+        <h3>Isabelle Soum</h3>
+        <p>Directrice Artistique</p>
+      </div>
+
+      <div class="membre" onclick="ouvrirModal(8)">
+        <img src="coordinateur.jpg" alt="Mehdi Karim" />
+        <h3>Mehdi Karim</h3>
+        <p>Coordinateur Technique</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODALE -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fermerModal()">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-nom"></h2>
+      <p id="modal-role"></p>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CardioDance Association – Tous droits réservés.</p>
+  </footer>
+
+  <script src="equipe.js"></script>
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+  
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
+
+    
+   

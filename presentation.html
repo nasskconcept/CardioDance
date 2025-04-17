@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation | CardioDance Association</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo de l'association CardioDance">
+      </a>
+
+      <div class="burger" id="burger">&#9776;</div>
+
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="horaire.html">Horaires</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+    <main>
+      <section class="introduction">
+        <h1>Qui sommes-nous ?</h1>
+        <p>CardioDance Association est une structure associative dynamique basée à Lille, dédiée à la pratique et à la promotion des danses sportives.<br>
+           Fondée par des passionnés de mouvement et de bien-être, notre association a pour mission de faire découvrir la danse comme une activité physique complète,<br>
+            accessible à toutes et à tous, dans un esprit de convivialité, d’inclusion et de partage. Nous croyons au pouvoir du corps en mouvement pour renforcer la confiance,<br>
+             la forme physique et le lien social.</p>
+             <h1>Nos activités</h1>
+             <p>Nous proposons un large panel de cours de danses sportives, allant de la zumba à la salsa fitness, en passant par le cardio-dance,<br>
+               le strong nation ou encore des ateliers de danse urbaine dynamique. Nos séances sont encadrées par des intervenants expérimentés, certifiés et passionnés,<br>
+                qui adaptent les chorégraphies selon les niveaux et les capacités de chacun. Que vous soyez débutant, amateur ou confirmé, vous trouverez chez nous une <a href="activites.html">activité</a> à votre rythme,<br>
+                 dans une ambiance motivante et chaleureuse.</p>
+                 <h1>Notre vision</h1>
+                 <p>CardioDance Association aspire à devenir un véritable moteur de bien-être collectif à travers le plaisir de danser. Plus qu’un simple cours de sport,<br>
+                   chaque atelier est une invitation à se reconnecter à soi-même, à explorer l’énergie du groupe, et à cultiver la joie du mouvement.<br>
+                    Nous organisons également des événements festifs, des démonstrations publiques et des projets collaboratifs avec d'autres associations locales pour faire rayonner la danse comme vecteur de lien social et de vitalité urbaine.</p>
+      </section>
+      </main>
+    <footer>
+        <p>&copy; 2025 CardioDance Association – Tous droits réservés.</p>
+      </footer>
+      <script>
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+      
+        burger.addEventListener('click', () => {
+          menu.classList.toggle('show');
+        });
+      </script>
+    </body>
+</html>

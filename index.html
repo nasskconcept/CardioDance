@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | CardioDance Association</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo de l'association CardioDance">
+      </a>
+  
+      <div class="burger" id="burger">&#9776;</div>
+  
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="horaire.html">Horaires</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main>
+    <section class="intro">
+      <h1>Bienvenue sur CardioDance Association</h1>
+      <p>Une association engagée pour faire rayonner la danse, la créativité et le partage à travers des ateliers ouverts à tous.</p>
+      <p>Rejoignez-nous dans un univers où l’expression rime avec passion et bienveillance.</p>
+      <a href="presentation.html" class="read-more">Lire plus</a>
+      <div class="video-accueil">
+        <video src="BienvenueCardioDance.mp4" controls autoplay muted loop></video>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 CardioDance Association – Tous droits réservés.</p>
+  </footer>
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+  
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

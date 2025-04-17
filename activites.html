@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activités | CardioDance Association</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo de l'association CardioDance">
+      </a>
+  
+      <!-- Icône burger -->
+      <div class="burger" id="burger">&#9776;</div>
+  
+      <!-- Menu -->
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="horaire.html">Horaires</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main class="activites">
+    <h1>Nos Activités</h1>
+  
+    <div class="activite" id="zumba">
+      <img src="zumba.jpg" alt="Cours de Zumba">
+      <div class="texte">
+        <h2>Zumba</h2>
+        <p>Un cocktail énergique de danse et de fitness sur des rythmes latinos ! Accessible à tous, la Zumba allie cardio, coordination et bonne humeur.</p>
+        <ul>
+          <li><strong>Professeur :</strong> Léa Fernandez</li>
+          <li><strong>Capacité :</strong> 25 personnes</li>
+          <li><strong>Places disponibles :</strong> 6</li>
+          <li><strong>Jour :</strong> Lundi et jeudi à 18h</li>
+        </ul>
+        <a href="contact.html" class="btn-inscription">S’inscrire</a>
+      </div>
+    </div>
+  
+    <div class="activite" id="strong">
+      <img src="strong.jpg" alt="Strong Nation">
+      <div class="texte">
+        <h2>Strong Nation</h2>
+        <p>Une activité qui combine mouvements synchronisés sur la musique et exercices de renforcement musculaire. Idéal pour dépasser ses limites en rythme !</p>
+        <ul>
+          <li><strong>Professeur :</strong> Malik Diao</li>
+          <li><strong>Capacité :</strong> 20 personnes</li>
+          <li><strong>Places disponibles :</strong> 3</li>
+          <li><strong>Jour :</strong> Mardi à 19h</li>
+        </ul>
+        <a href="contact.html" class="btn-inscription">S’inscrire</a>
+      </div>
+    </div>
+  
+    <div class="activite" id="hiphop">
+      <img src="hiphop.jpg" alt="Hip-Hop Cardio">
+      <div class="texte">
+        <h2>Hip-Hop Cardio</h2>
+        <p>Une fusion entre danse urbaine et cardio-training. Parfait pour s’exprimer, se défouler et bouger avec style.</p>
+        <ul>
+          <li><strong>Professeur :</strong> Chloé Morel</li>
+          <li><strong>Capacité :</strong> 30 personnes</li>
+          <li><strong>Places disponibles :</strong> 12</li>
+          <li><strong>Jour :</strong> Mercredi à 17h30</li>
+        </ul>
+        <a href="contact.html" class="btn-inscription">S’inscrire</a>
+      </div>
+    </div>
+  
+    
+<div class="activite" id="stretching">
+      <img src="stretch.jpg" alt="Stretching & Mobilité">
+      <div class="texte">
+        <h2>Stretching & Mobilité</h2>
+        <p>Des séances douces pour étirer les muscles, améliorer la posture, prévenir les blessures et relâcher les tensions accumulées.</p>
+        <ul>
+          <li><strong>Professeur :</strong> Nadia Krief</li>
+          <li><strong>Capacité :</strong> 15 personnes</li>
+          <li><strong>Places disponibles :</strong> 5</li>
+          <li><strong>Jour :</strong> Vendredi à 10h</li>
+        </ul>
+        <a href="contact.html" class="btn-inscription">S’inscrire</a>
+      </div>
+    </div>
+  
+    <div class="activite" id="libre">
+      <img src="danseLibre.jpg" alt="Danse Libre Créative">
+      <div class="texte">
+        <h2>Danse Libre Créative</h2>
+        <p>Un atelier pour explorer sa propre gestuelle, improviser en groupe et se reconnecter à son corps par l’émotion et le mouvement.</p>
+        <ul>
+          <li><strong>Professeur :</strong> Jules Navarro</li>
+          <li><strong>Capacité :</strong> 20 personnes</li>
+          <li><strong>Places disponibles :</strong> 2</li>
+          <li><strong>Jour :</strong> Dimanche à 11h</li>
+        </ul>
+        <a href="contact.html" class="btn-inscription">S’inscrire</a>
+      </div>
+    </div>
+  
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 CardioDance Association – Tous droits réservés.</p>
+  </footer>
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+  
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

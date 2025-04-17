@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités | CardioDance Association</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo de l'association CardioDance">
+      </a>
+  
+      <!-- Icône burger -->
+      <div class="burger" id="burger">&#9776;</div>
+  
+      <!-- Menu -->
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="horaire.html">Horaires</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+    <main class="actualites">
+      <h1>Nos Actualités</h1>
+
+      
+       
+        
+          <h2>Nouveau cours : Cardio Latino dès le mois prochain !</h2>
+          <div class="actualite">
+            <time datetime="2025-04-15" class="actualite-date">15 avril 2025</time>
+          <img src="danceLatino.jpg" alt="cours de danse">
+          <div class="texte">
+            <p>À partir du mois prochain, découvrez notre tout nouveau cours de Cardio Latino,<br>
+              un mélange explosif de danses latines et d’exercices cardio !<br> Ouvert à tous niveaux,
+              ce cours vous fera voyager à travers les rythmes de la salsa, merengue,<br>
+              reggaeton et bachata tout en boostant votre forme physique.<br> Ambiance garantie !</p>
+            </div>
+          </div>
+          <h2>Soirée dansante spéciale “Années 80”</h2>
+          <div class="actualite">
+            <time datetime="2025-04-10" class="actualite-date">10 avril 2025</time>
+          <img src="danse80.jpg" alt="danseur style années 80">
+          <div class="texte">
+            <p>CardioDance vous invite à une soirée dansante thématique haute en couleurs !<br>
+               Sortez vos tenues fluo, vos bandeaux et vos baskets vintage pour une soirée Années 80 pleine de chorégraphies rétro,<br>
+               de flash mobs et de bonne humeur. L’événement est gratuit pour nos adhérents.</p>
+              </div>
+            </div>
+          <h2>Shooting photo des membres de l’association</h2>
+          <div class="actualite">
+            <time datetime="2025-04-7" class="actualite-date">7 avril 2025</time>
+          <img src="shooting.jpg" alt="groupe de danse">
+          <div class="texte">
+            <p>Ce mois-ci, nous avons organisé un shooting photo professionnel avec nos adhérents et profs.<br>
+               L’occasion de mettre en lumière la diversité, l’énergie et l’esprit de famille qui règnent au sein de CardioDance.<br>
+               Les photos seront bientôt exposées sur notre site et nos réseaux !</p>
+              </div>
+            </div>
+          <h2>Participation au Festival “Danse en ville”</h2>
+          <div class="actualite">
+            <time datetime="2025-03-15" class="actualite-date">15 mars 2025</time>
+          <img src="festival.jpg" alt="danseur sur scène">
+          <div class="texte">
+            <p>Nous sommes fiers d’avoir représenté CardioDance au Festival “Danse en ville” qui a eu lieu à Lille !<br>
+               Nos membres ont proposé une démonstration de cardio-danse sur scène, suivie d’un atelier d’initiation.<br>
+               Merci à toutes celles et ceux qui sont venus nous applaudir et danser avec nous !</p>
+              </div>
+            </div>
+          <h2>Ateliers bien-être en partenariat avec une association locale</h2>
+          <div class="actualite">
+            <time datetime="2025-03-5" class="actualite-date">5 mars 2025</time>
+          <img src="atelierBienEtre.jpg" alt="cours de danse avec danseurs">
+          <div class="texte">
+            <p>Dans le cadre de notre démarche bien-être, nous lançons une série d’ateliers combinant danse douce,<br>
+               respiration et relaxation, en collaboration avec l’association "Harmonie Corps & Esprit".<br>
+               Un nouveau pas vers un équilibre corps/esprit, à découvrir chaque dimanche matin.</p>
+              </div>
+            </div>
+            <nav class="pagination">
+              <ul>
+                <li><a href="?page=1" class="active">1</a></li>
+                <li><a href="?page=2">2</a></li>
+                <li><a href="?page=3">3</a></li>
+                <li>…</li>
+                <li><a href="?page=15">15</a></li>
+                <li><a href="?page=16">16</a></li>
+              </ul>
+            </nav>
+      
+      </main>
+    <footer>
+        <p>&copy; 2025 CardioDance Association – Tous droits réservés.</p>
+      </footer>
+      <script>
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+      
+        burger.addEventListener('click', () => {
+          menu.classList.toggle('show');
+        });
+      </script>
+    </body>
+</html>

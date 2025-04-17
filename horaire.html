@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planning | CardioDance Association</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo de l'association CardioDance">
+      </a>
+  
+      <!-- Icône burger -->
+      <div class="burger" id="burger">&#9776;</div>
+  
+      <!-- Menu -->
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="horaire.html">Horaires</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main class="planning">
+    <h1>Planning Hebdomadaire</h1>
+
+    <div class="planning-grille">
+      <div class="jour">
+        <h2>Lundi</h2>
+        <p>18h – Zumba</p>
+        <a href="activites.html#zumba" class="btn-jour">Zumba</a>
+      </div>
+      <div class="jour">
+        <h2>Mardi</h2>
+        <p>19h – Strong Nation</p>
+        <a href="activites.html#strong" class="btn-jour">Strong Nation</a>
+      </div>
+      <div class="jour">
+        <h2>Mercredi</h2>
+        <p>17h30 – Hip-Hop Cardio</p>
+        <a href="activites.html#hiphop" class="btn-jour">Hip-Hop</a>
+      </div>
+      <div class="jour">
+        <h2>Jeudi</h2>
+        <p>18h – Zumba</p>
+        <a href="activites.html#zumba" class="btn-jour">Zumba</a>
+      </div>
+      <div class="jour">
+        <h2>Vendredi</h2>
+        <p>10h – Stretching & Mobilité</p>
+        <a href="activites.html#stretching" class="btn-jour">Stretching</a>
+      </div>
+      <div class="jour">
+        <h2>Dimanche</h2>
+        <p>11h – Danse Libre Créative</p>
+        <a href="activites.html#libre" class="btn-jour">Danse Libre</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CardioDance Association – Tous droits réservés.</p>
+  </footer>
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+  
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
