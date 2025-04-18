@@ -66,7 +66,7 @@ header {
 .intro h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Bungee Spice', cursive;
+  font-family: 'Bungee Spice', 'Arial', sans-serif;
   color: var(--rose-cardio);
 }
 
@@ -103,7 +103,7 @@ header {
 .introduction h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Bungee Spice', cursive;
+  font-family: 'Bungee Spice', 'Arial', sans-serif;
   color: var(--rose-cardio);
 }
 .introduction p {
@@ -145,7 +145,7 @@ footer {
     text-decoration: none;
     color: var(--text);
     font-weight: bold;
-    font-family: 'Bungee Spice', cursive;
+    font-family: 'Bungee Spice', 'Arial', sans-serif;
     transition: color 0.3s;
   }
   
@@ -162,7 +162,7 @@ footer {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-family: 'Bungee Spice', sans-serif;
+    font-family: 'Bungee Spice', 'Arial', sans-serif;
     color: var(--text);
   }
   .actualites h2 {
@@ -284,7 +284,7 @@ footer {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-family: 'Bungee Spice', cursive;
+    font-family: 'Bungee Spice', 'Arial', sans-serif;
     color: var(--text);
   }
   
@@ -364,7 +364,7 @@ footer {
     background-color: var(--bg);
   }
   .equipe h1 {
-    font-family: 'Bungee Spice', cursive;
+    font-family: 'Bungee Spice', 'Arial', sans-serif;
     color: var(--rose-cardio);
   }
   .equipe h3 {
