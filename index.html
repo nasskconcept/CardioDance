@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil | CardioDance Association</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pacifico&family=Monoton&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <div class="header-container">
+
+      <button id="theme-toggle" aria-label="Basculer le thème">🌙</button>
+      
       <a href="index.html" class="logo">
         <img src="logo.png" alt="Logo de l'association CardioDance">
       </a>
@@ -29,6 +33,7 @@
       </nav>
     </div>
   </header>
+  
   
 
   <main>
@@ -55,5 +60,7 @@
       menu.classList.toggle('show');
     });
   </script>
+
+<script src="theme.js"></script>
 </body>
 </html>

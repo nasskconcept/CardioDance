@@ -1,9 +1,37 @@
-/* Importation des polices */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pacifico&family=Monoton&family=Roboto&display=swap');
 
  
 
 
+:root {
+  --rose-cardio:           #C5297A;
+  --rouge-vif:             #EB4B42;
+  --turquoise:             #008C9E;
+  --violet:                #9B2AAE;
+
+  --couleur-principale:       #c21875;
+  --couleur-principale-hover: #a0105f;
+
+  --border:       #aaa;
+  --border-light: #ddd;
+  --border-muted: #f0f0f0;
+  --text-muted:   #888;
+
+  --bg:        #fafafa;
+  --text:      #333;
+  --header-bg: var(--turquoise);
+  --card-bg:   #fff;
+  --footer-bg: #eee;
+  /* tu peux ajouter ici d’autres variables comme --border, --shadow, etc. */
+}
+
+.dark-mode {
+  --bg:        #1e1e1e;
+  --text:      #eee;
+  --header-bg: #005f6b;
+  --card-bg:   #2a2a2a;
+  --footer-bg: #222;
+}
 
 * {
   margin: 0;
@@ -13,15 +41,15 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #fafafa;
-  color: #333;
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
 }
 
 /* tête */
 header {
-  background-color: #008C9E;
-  border-bottom: 1px solid #ddd;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border-light);
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
@@ -30,16 +58,16 @@ header {
 .intro {
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #fafafa;
-  border-top: 4px solid #ccc;
-  border-bottom: 4px solid #ccc;
+  background-color: var(--card-bg);
+  border-top: 4px solid var(--border);
+  border-bottom: 4px solid var(--border);
 }
 
 .intro h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-family: 'Bungee Spice', cursive;
-  color: #C5297A;
+  color: var(--rose-cardio);
 }
 
 .intro p {
@@ -53,7 +81,7 @@ header {
 .read-more {
   display: inline-block;
   margin-top: 1.5rem;
-  color: #C5297A;
+  color: var(--rose-cardio);
   text-decoration: none;
   font-weight: bold;
   border-bottom: 2px solid transparent;
@@ -61,21 +89,22 @@ header {
 }
 
 .read-more:hover {
-  color: #EB4B42;
-  border-color: #aaa;
+  color: var(--rouge-vif);
+  border-color: var(--border);
+}
+
+.introduction {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--bg);
+  border-top: 4px solid var(--border);
+  border-bottom: 4px solid var(--border);
 }
 .introduction h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-family: 'Bungee Spice', cursive;
-  color: #C5297A;
-}
-.introduction {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: #fafafa;
-  border-top: 4px solid #ccc;
-  border-bottom: 4px solid #ccc;
+  color: var(--rose-cardio);
 }
 .introduction p {
   font-family: 'Bungee', cursive;
@@ -87,17 +116,17 @@ header {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #eee;
+  background-color: var(--footer-bg);
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text);
 }
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-light);
   }
   
   .logo img {
@@ -109,12 +138,12 @@ footer {
     list-style: none;
     display: flex;
     gap: 1.5rem;
-    justify-content: center; /* Ajoute-le ici si tu veux centrer le menu */
+    justify-content: center; 
   }
   
   nav a {
     text-decoration: none;
-    color: #444;
+    color: var(--text);
     font-weight: bold;
     font-family: 'Bungee Spice', cursive;
     transition: color 0.3s;
@@ -134,20 +163,21 @@ footer {
     margin-bottom: 2rem;
     text-align: center;
     font-family: 'Bungee Spice', sans-serif;
+    color: var(--text);
   }
   .actualites h2 {
     font-family: 'Pacifico', cursive ;
-    color: #EB4B42;
+    color: var(--rouge-vif);
   }
   .actualite {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
     margin-bottom: 2.5rem;
-    background-color: #fff;
+    background-color: var(--card-bg);
     padding: 1.5rem;
-    border-left: 4px solid #008C9E;
-    border-bottom: 4px solid #008C9E;
+    border-left: 4px solid var(--turquoise);
+    border-bottom: 4px solid var(--turquoise);
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -156,7 +186,7 @@ footer {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
-    color: #888;
+    color: var(--text-muted);
     margin-bottom: 0.5rem;
   }
   
@@ -164,7 +194,7 @@ footer {
     width: 250px;
     height: 180px;
     object-fit: cover;
-    border-left: 4px solid #9B2AAE; 
+    border-left: 4px solid var(--violet); 
     border-radius: 11px;
     flex-shrink: 0;
     padding-left: 4px; 
@@ -190,21 +220,21 @@ footer {
     display: block;
     padding: 0.5rem 0.75rem;
     font-family: 'Roboto', sans-serif;
-    color: #008C9E;
+    color: var(--turquoise);
     text-decoration: none;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-light);
     border-radius: 4px;
     transition: background 0.2s, color 0.2s;
   }
   
   .pagination a:hover {
-    background-color: #f0f0f0;
+    background-color: var(--border-muted);
   }
   
   .pagination a.active {
-    background-color: #008C9E;
-    color: #fff;
-    border-color: #008C9E;
+    background-color: var(--turquoise);
+    color: var(--card-bg);
+    border-color: var(--turquoise);
   }
   
   
@@ -231,7 +261,7 @@ footer {
     .actualite h2 {
       font-family: 'Pacifico', cursive;
       font-size: 1.8rem;
-      color: #c21875;
+      color:var(--rose-cardio);
       margin-bottom: 1rem;
     }
     
@@ -241,7 +271,7 @@ footer {
   .actualite p {
     font-family: 'Bungee', cursive;
     font-size: 1rem;
-    color: #555;
+    color: var(--text);
   }
   
   .activites {
@@ -255,7 +285,7 @@ footer {
     margin-bottom: 2rem;
     text-align: center;
     font-family: 'Bungee Spice', cursive;
-    color: #222;
+    color: var(--text);
   }
   
   .activite {
@@ -263,10 +293,10 @@ footer {
     align-items: center; 
     gap: 2rem;
     margin-bottom: 2.5rem;
-    background-color: #fff;
+    background-color:var(--card-bg);
     padding: 1.5rem;
-    border-left: 4px solid #008C9E;
-    border-bottom: 4px solid #008C9E;
+    border-left: 4px solid var(--turquoise);
+    border-bottom: 4px solid var(--turquoise);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
@@ -275,7 +305,7 @@ footer {
     width: 250px;
     height: 180px;
     object-fit: cover;
-    border-left: 4px solid #9B2AAE; 
+    border-left: 4px solid var(--violet); 
     border-radius: 8px;
     flex-shrink: 0;
     box-shadow: -4px 0 8px rgba(0, 140, 158, 0.2); 
@@ -287,13 +317,13 @@ footer {
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
     font-family: 'Pacifico', cursive;
-    color: #EB4B42;
+    color: var(--rouge-vif);
   }
   
   .activite p {
     font-size: 1rem;
     font-family: 'bungee', cursive;
-    color: #555;
+    color: var(--text);
   }
   
   .texte ul {
@@ -305,20 +335,17 @@ footer {
   .texte ul li {
     font-family: 'Bungee', cursive;
     font-size: 0.95rem;
-    color: #444;
+    color: var(--text);
     margin-bottom: 0.3rem;
   }
-  :root {
-    --couleur-principale: #c21875;
-    --couleur-principale-hover: #a0105f;
-  }
+
   
   .btn-inscription {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
     background-color: var(--couleur-principale);
-    color: #fff;
+    color: var(--card-bg);
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
@@ -327,23 +354,26 @@ footer {
   }
   
   .btn-inscription:hover {
-    background-color: #EB4B42;
+    background-color: var(--rouge-vif);
   }
   .equipe {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    background-color: var(--bg);
   }
   .equipe h1 {
     font-family: 'Bungee Spice', cursive;
+    color: var(--rose-cardio);
   }
   .equipe h3 {
     font-family: 'Pacifico', cursive;
-    color: #EB4B42;
+    color: var(--rouge-vif);
   }
   .equipe p {
     font-family: 'Bungee', cursive;
+    color: var(--text);
   }
   .grille-equipe {
     display: grid;
@@ -352,10 +382,10 @@ footer {
   }
   
   .membre {
-    background-color: #fff;
+    background-color: var(--card-bg);
     padding: 1rem;
-    border-left: 4px solid #008C9E;
-    border-bottom: 4px solid #008C9E;
+    border-left: 4px solid var(--turquoise);
+  border-bottom: 4px solid var(--turquoise);
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -370,7 +400,7 @@ footer {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-bottom: 4px solid #9B2AAE;
+    border-bottom: 4px solid var(--violet);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
@@ -386,11 +416,11 @@ footer {
   }
   
   .modal-content {
-    background: white;
+    background: var(--card-bg);
     padding: 2rem;
     max-width: 600px;
-    border-left: 4px solid #008C9E;
-    border-bottom: 4px solid #008C9E;
+    border-left: 4px solid var(--turquoise);
+    border-bottom: 4px solid var(--turquoise);
     border-radius: 12px;
     position: relative;
     text-align: center;
@@ -401,7 +431,7 @@ footer {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
-    border-left: 4px solid #9B2AAE;
+    border-left: 4px solid var(--violet);
     border-radius: 10px;
     margin-bottom: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -410,10 +440,11 @@ footer {
   .modal-content h2 {
     margin: 0.5rem 0;
     font-family: 'Pacifico', cursive;
-    color: var(--couleur-principale);
+    color: var(--rose-cardio);
   }
   .modal-content p {
     font-family: 'Bungee', cursive;
+    color: var(--text);
   }
   
   .close {
@@ -422,7 +453,7 @@ footer {
     right: 20px;
     font-size: 2rem;
     cursor: pointer;
-    color: #888;
+    color: var(--text);
   }
   
   @keyframes fadeIn {
@@ -432,7 +463,7 @@ footer {
   .video-accueil {
     max-width: 600px;
     margin: 2rem auto;
-    border: 8px solid #008C9E; 
+    border: 8px solid var(--turquoise); 
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -447,13 +478,14 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
+    background-color: var(--bg);
   }
   
   .contact h1 {
     text-align: center;
     margin-bottom: 2rem;
     font-family: 'Bungee Spice', cursive;
-    color: #222;
+    color: var(--text);
   }
   
   .contact-container {
@@ -473,21 +505,24 @@ footer {
   .formulaire-contact label {
     margin: 0.5rem 0 0.2rem;
     font-weight: bold;
+    color: var(--text);
   }
   
   .formulaire-contact input,
   .formulaire-contact textarea {
     padding: 0.6rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 8px;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--card-bg);
+    color: var(--text);
   }
   
   .formulaire-contact button {
     margin-top: 1rem;
     padding: 0.7rem;
     background-color: var(--couleur-principale);
-    color: white;
+    color: var(--card-bg);
     border: none;
     border-radius: 8px;
     font-weight: bold;
@@ -496,7 +531,7 @@ footer {
   }
   
   .formulaire-contact button:hover {
-    background-color: #EB4B42;
+    background-color: var(--couleur-principale-hover);
   }
   
   .infos-contact {
@@ -506,8 +541,8 @@ footer {
   
   .map-container {
     margin-top: 1rem;
-      border-left: 4px solid #008C9E;
-  border-bottom: 4px solid #008C9E;
+    border-left: 4px solid var(--turquoise);
+    border-bottom: 4px solid var(--turquoise);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -517,11 +552,12 @@ footer {
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    background-color: var(--bg);
   }
   
   .planning h1 {
     font-family: 'Bungee Spice', cursive;
-    color: #222;
+    color: var(--text);
     margin-bottom: 2rem;
   }
   
@@ -532,9 +568,9 @@ footer {
   }
   
   .jour {
-    background-color: #fff;
-    border-left: 4px solid #008C9E;
-    border-bottom: 4px solid #008C9E;
+    background-color: var(--card-bg);
+    border-left: 4px solid var(--turquoise);
+    border-bottom: 4px solid var(--turquoise);
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     padding: 1.5rem;
@@ -551,14 +587,14 @@ footer {
   }
   
   .jour p {
-    color: #555;
+    color: var(--text);
     margin-bottom: 1rem;
   }
   
   .btn-jour {
     padding: 0.5rem 1rem;
     background-color: var(--couleur-principale);
-    color: white;
+    color: var(--card-bg);
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
@@ -575,14 +611,14 @@ footer {
     color: var(--couleur-principale);
   }
   
-  /* Par défaut, le menu est visible */
+  
   nav ul {
     display: flex;
     gap: 1.5rem;
     list-style: none;
   }
   
-  /* Responsive burger menu */
+  
   @media screen and (max-width: 768px) {
     .burger {
       display: block;
@@ -608,3 +644,16 @@ footer {
       align-items: center;
     }
   }    
+  #theme-toggle {
+    position: fixed;
+    bottom: 1rem;       
+    right: 1rem;      
+    background: var(--card-bg);  
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;     
+  }

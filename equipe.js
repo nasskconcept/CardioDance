@@ -67,4 +67,3 @@ const equipe = [
   function fermerModal() {
     document.getElementById("modal").style.display = "none";
   }
-  
