@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pacifico&family=Monoton&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Bungee+Spice&family=Bungee&family=Pacifico&display=swap');
+
 
  
 
@@ -22,7 +23,6 @@
   --header-bg: var(--turquoise);
   --card-bg:   #fff;
   --footer-bg: #eee;
-  /* tu peux ajouter ici d’autres variables comme --border, --shadow, etc. */
 }
 
 .dark-mode {
@@ -71,7 +71,7 @@ header {
 }
 
 .intro p {
-  font-family: 'Bungee', cursive;
+  font-family: 'Roboto', sans-serif;
   max-width: 700px;
   margin: 0.5rem auto;
   font-size: 1.1rem;
@@ -107,7 +107,7 @@ header {
   color: var(--rose-cardio);
 }
 .introduction p {
-  font-family: 'Bungee', cursive;
+  font-family: 'Roboto', sans-serif;
   max-width: 700px;
   margin: 0.5rem auto;
   font-size: 1.1rem;
@@ -269,7 +269,7 @@ footer {
   
   
   .actualite p {
-    font-family: 'Bungee', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: var(--text);
   }
@@ -322,7 +322,7 @@ footer {
   
   .activite p {
     font-size: 1rem;
-    font-family: 'bungee', cursive;
+    font-family: 'Roboto', sans-serif;
     color: var(--text);
   }
   
@@ -333,7 +333,7 @@ footer {
   }
   
   .texte ul li {
-    font-family: 'Bungee', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.95rem;
     color: var(--text);
     margin-bottom: 0.3rem;
@@ -619,32 +619,46 @@ footer {
   }
   
   
-  @media screen and (max-width: 768px) {
-    .burger {
-      display: block;
-    }
-  
-    nav {
-      display: none;
-      width: 100%;
-    }
-  
-    nav.show {
-      display: block;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem 0;
-    }
-  
-    .header-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }    
+  /* par défaut on cache le burger, et on affiche le menu */
+.burger {
+  display: none;
+  /* ... */
+}
+#menu {
+  display: block;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  /* on ne masque plus tous les <nav> mais seulement ton #menu */
+  #menu {
+    display: none;
+    width: 100%;
+  }
+  #menu.show {
+    display: block;
+  }
+
+  /* on empile les items du menu */
+  #menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  /* header remonte en colonne */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
   #theme-toggle {
+    font-family: 'Bungee', cursive;
     position: fixed;
     bottom: 1rem;       
     right: 1rem;      
