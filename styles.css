@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Bungee+Spice&family=Bungee&family=Pacifico&display=swap');
-
-
- 
-
 
 :root {
   --rose-cardio:           #C5297A;
@@ -66,7 +61,7 @@ header {
 .intro h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Bungee Spice', 'Arial', sans-serif;
+  font-family: 'Bungee Spice', cursive;
   color: var(--rose-cardio);
 }
 
@@ -145,7 +140,7 @@ footer {
     text-decoration: none;
     color: var(--text);
     font-weight: bold;
-    font-family: 'Bungee Spice', 'Arial', sans-serif;
+    font-family: 'Bungee Spice', cursive;
     transition: color 0.3s;
   }
   
@@ -162,7 +157,7 @@ footer {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-family: 'Bungee Spice', 'Arial', sans-serif;
+    font-family: 'Bungee Spice', cursive;
     color: var(--text);
   }
   .actualites h2 {
@@ -364,7 +359,7 @@ footer {
     background-color: var(--bg);
   }
   .equipe h1 {
-    font-family: 'Bungee Spice', 'Arial', sans-serif;
+    font-family: 'Bungee Spice', cursive;
     color: var(--rose-cardio);
   }
   .equipe h3 {
